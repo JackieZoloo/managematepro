@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles.container}>
+      <h1 style={styles.title}>ManageMatePro</h1>
+      <p style={styles.subtitle}>A Real Solution Is Coming Soon</p>
     </div>
   );
 }
+
+const styles = {
+  container: {
+    height: "100vh",
+    backgroundColor: "#f8f2ee",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    fontFamily: "'Segoe UI', sans-serif",
+    color: "#333",
+  },
+  title: {
+    fontSize: "3rem",
+    fontWeight: "700",
+    marginBottom: "1rem",
+  },
+  subtitle: {
+    fontSize: "1.5rem",
+    fontStyle: "italic",
+    opacity: 0.8,
+  },
+};
 
 export default App;
